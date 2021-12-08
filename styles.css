@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: Poppins-bold;
+    src: url(fonts/Poppins-Bold.ttf);
+  }
+
+  @font-face {
+    font-family: Poppins-light;
+    src: url(fonts/Poppins-Light.ttf);
+  }
+
 html, body{
     width: 100%;
     height: 100%;
@@ -23,9 +33,14 @@ header{
 }
 
 .header h1{
+    font-family: poppins-bold;
     padding-top: 1rem;
-    margin-bottom: .5rem;
+    margin-bottom: .3rem;
     box-shadow: 0 .5rem 1rem 1rem black,
+}
+
+.header p{
+    font-family:  poppins-light;
 }
 
 #file{
@@ -34,16 +49,19 @@ header{
 
 .file{
     position: fixed;
-    right: .5rem;
+    right: 1rem;
     top: 1rem;
     display: inline-block;
-    font-size: 2rem;
     padding: 1rem;
     z-index: 10;
 }
 
+.material-icons-outlined, .material-icons-outlined img{
+    width: 3rem;
+}
 
 main{
+    font-family:  poppins-light;
     position: relative;
     color: #FFF;
     width: 100%;
@@ -79,8 +97,8 @@ main{
     margin: 1rem;
 }
 
-.img:hover{
-    width: 30%;
+.img img:hover{
+    width: 110%;
     box-shadow: 0 0 100px 1rem #fff;
 }
 
@@ -91,8 +109,8 @@ main{
 .img-modal{
     width: 70vmin;
     height: 70vmin;
-    position: absolute;
-    top: 40%;
+    position: fixed;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-repeat: no-repeat;
@@ -111,12 +129,30 @@ main{
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
-    border: 1px solid black;
-    background-color: rgba(0, 0, 0, .7);
     position: absolute;
     top: -2.2rem;
     right: -2.2rem;
 }
+
+/* .anterior, .posterior{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+}
+
+.anterior{
+    position: absolute;
+    top: 40%;
+    left: -2rem;
+}
+
+
+.posterior{
+    position: absolute;
+    top: 40%;
+    right: -2rem;
+} */
+
 
 
 

@@ -12,7 +12,11 @@
         <div class="header">
             <h1>vanilla gallery</h1>
             <p>basic js project</p>
-            <label for="file" class="file">Add</label>
+            <label for="file" class="file">
+                <span class="material-icons-outlined">
+                        <img src="icons/add_a_photo_white_24dp.svg">
+                    </span>
+            </label>
             <input type="file" id="file" multiple> 
         </div>
     </header>
@@ -22,8 +26,15 @@
             <div class="images">
                 <!--here goes images-->
             </div>
+
+                <!--modal-->
             <div class="img-modal">
-                <div class="hide-modal">X</div>
+                <div class="hide-modal">
+                    <span class="material-icons-outlined"><img src="icons/cancel_white_24dp.svg"></span>
+                </div>
+                    
+                <!-- <span class="anterior"></span>
+                <span class="posterior"></span> -->
             </div>
         </div>
     </main>
