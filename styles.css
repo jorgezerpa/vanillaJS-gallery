@@ -134,24 +134,22 @@ main{
     right: -2.2rem;
 }
 
-/* .anterior, .posterior{
-    width: 30px;
-    height: 30px;
-    background-color: red;
+.anterior, .posterior{
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    top: 50%;
+    transform: translate(0, -50%);
 }
 
 .anterior{
-    position: absolute;
-    top: 40%;
-    left: -2rem;
+    left: -2.5rem;
 }
 
 
 .posterior{
-    position: absolute;
-    top: 40%;
-    right: -2rem;
-} */
+    right: -2.5rem;
+}
 
 
 
